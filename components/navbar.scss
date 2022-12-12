@@ -1,0 +1,30 @@
+.navbar {
+  position: absolute;
+  height: 10vh;
+  width: 100vw;
+
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  nav {
+    width: fit-content;
+    display: flex;
+    gap: 30px;
+    .link {
+      background: rgb(63, 94, 251);
+      background: radial-gradient(
+        circle,
+        #00ffff 20%,
+        #4b7fff 40%,
+        #e959f1 100%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 1.4vw;
+      font-weight: 200;
+      font-family: "StretchPro", Tahoma, Geneva, Verdana, sans-serif;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+html,
+body {
+  background-color: rgb(15, 5, 30);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "OTF Glusp";
+  src: url("../public/OTF.ttf");
+}
+
+@font-face {
+  font-family: "Source Code Pro ExtraLight";
+  src: url("../public/source.ttf");
+}
+@font-face {
+  font-family: "StretchPro";
+  src: url("../public/StretchPro.otf");
+}
+@font-face {
+  font-family: "Retro Gaming";
+  src: url("../public/Retro.ttf");
+}

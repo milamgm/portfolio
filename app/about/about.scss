@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    display: flex;
+    background-color: red;
+    justify-content: space-between;
+    width: 90vw;
+    height: 300px;
+  .img_wrapper{
+    width: 50%;
+    height: 100%;
+  }
+  img{
+    width: 50%;
+  }
+  }
+}

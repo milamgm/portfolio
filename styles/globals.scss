@@ -1,19 +1,75 @@
-html,
+@layer base {
+  [data-nextjs-scroll-focus-boundary] {
+    display: contents;
+  }
+}
+beckblakestrom,
+aretrace,
+cibulka,
+hy2k,
+brunopistarino,
+shadeemerhi,
+graup,
+and H01001000 reacte html,
 body {
-  background-color: rgb(15, 5, 30);
+  background-color: mix(#010010, white, 94%);
+  display: flex;
+  font-family: "Heebo", Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: auto;
+  scrollbar-color: #c4c4c4 #ffffff;
 }
 
+  *::-webkit-scrollbar {
+    width: 13px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background:transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color:  mix(#010010, white, 57%);
+    border-radius: 10px;
+    border: 3px solid mix(#010010, white, 94%);
+  }
+
+
+.title {
+  height: 200px;
+  width: 100%;
+  padding-top: 60px;
+  padding-left: 70px;
+  @media screen and (max-width: 1200px) {
+    font-size: 3.4rem;
+  }
+  .text {
+    color: white;
+    font-size: 3.4rem;
+    text-transform: uppercase;
+  }
+  span {
+    span {
+      color: #00ffff;
+    }
+  }
+}
+h1 {
+  font-size: 3rem;
+}
 @font-face {
   font-family: "OTF Glusp";
   src: url("../public/OTF.ttf");
@@ -30,4 +86,16 @@ a {
 @font-face {
   font-family: "Retro Gaming";
   src: url("../public/Retro.ttf");
+}
+@font-face {
+  font-family: "Mustard";
+  src: url("../public/Mustard.ttf");
+}
+@font-face {
+  font-family: "Nanum Gothic";
+  src: url("../public/NanumGothic.ttf");
+}
+@font-face {
+  font-family: "Heebo";
+  src: url("../public/Heebo.ttf");
 }

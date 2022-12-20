@@ -1,77 +1,131 @@
-.container {
-  padding-top: 20vh;
-  padding-left: 80px;
-  background-color: rgb(99, 31, 217);
-  height: 100vh;
-  .menu {
-    .item {
-      width: max-content;
-      &:hover {
-        color: #c24628;
-        z-index: -2;
-      }
-
-      .img_wrapper {
-        border: solid black 3px;
-        background: rgb(63, 94, 251);
-        background: radial-gradient(
-          circle,
-          rgba(63, 94, 251, 1) 0%,
-          rgba(252, 70, 107, 1) 100%
-        );
-        .window_squares {
-          height: 50px;
-          display: flex;
-          gap: 10px;
-          align-items: center;
-          .square {
-            width: 30px;
-            height: 30px;
-            border: solid black 3px;
-            color: white;
-          }
-        }
-        padding: 5px;
-        background-color: red;
-        position: fixed;
-        top: 25%;
-        left: 40%;
-        transform: translate(-50%, -50%);
-        width: 800px;
-        height: fit-content;
-        pointer-events: none;
-        opacity: 0;
+.works {
+  .main {
+    height: 100vh;
+    .menu {
+      padding: 70px 80px;
+      .item {
+        width: max-content;
         &:hover {
+          color: mix(#00ffff, white, 65%);
           z-index: -2;
         }
-        .inner img {
-          left: 0;
-          top: 0;
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-        }
-        img {
-          border: solid black 3px;
-        }
-      }
+        .img_wrapper {
+          position: fixed;
+          top: 10%;
+          left: 53%;
+          transform: translate(-50%, -50%);
+          width: 35vw;
+          height: fit-content;
+          pointer-events: none;
+          opacity: 0;
+          @media screen and (max-width: 1000px) {
+            display: none;
+          }
 
-      .text {
-        font-family: "StretchPro", Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 4vw;
-        line-height: 1;
-        color: #e6e3d8;
-        opacity: 1;
-        transition: opacity 350ms ease;
-        white-space: nowrap;
-        overflow: hidden;
-        cursor: pointer;
-        &:hover {
-          color: #c24628;
+          &:hover {
+            z-index: -2;
+          }
+          img {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+        .text {
+          cursor: pointer;
+          .innertext {
+            font-weight: 700;
+            font-size: 3vw;
+            line-height: 1.5;
+            color: #e6e3d8;
+            @media screen and (max-width: 1200px) {
+              font-size: 1.9rem;
+            }
+            &:hover {
+              transition: all 0.3s ease;
+              color: mix(#00ffff, white, 65%);
+            }
+          }
         }
       }
+    }
+  }
+
+  section {
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
+    margin-left: 8%;
+    align-items: center;
+    color: white;
+    .center {
+      width: 80%;
+      gap: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+
+      display: flex;
+      .side {
+        width: 45%;
+        min-width: 300px;
+      }
+    }
+  }
+  .arrow {
+    border-radius: 50%;
+    background-color: #00ffff;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: mix(#010010, white, 94%);
+    font-size: 3rem;
+  }
+
+  .info {
+    display: flex;
+    width: 100%;
+    min-height: 450px;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+    margin: 100px 0px;
+    h2 {
+      font-size: 2rem;
+      cursor: pointer;
+    }
+    p {
+      max-width: 600px;
+    }
+    .technologies {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5px;
+      img {
+        width: 50px;
+      }
+    }
+  }
+
+  .works_img_wrapper {
+    object-fit: cover;
+    width: 70%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    img {
+      width: 100%;
+      cursor: pointer;
     }
   }
 }

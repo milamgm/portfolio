@@ -1,10 +1,10 @@
-.page {
+.home {
   position: relative;
-  color: rgb(15, 5, 30);
   display: flex;
   align-items: center;
   min-height: 100vh;
 
+  height: 100vh;
   .center {
     h1 {
       background: rgb(63, 94, 251);
@@ -14,21 +14,36 @@
         #25bfff 30%,
         #4b7fff 40%,
         #703fff 50%,
-        #9600ff 60%,
+        #9600ff 60%
       );
       position: relative;
       font-family: Lato, sans-serif;
-      font-size: calc(40px + 4vw);
+      font-size: calc(40px + 3vw);
       font-weight: bold;
       padding-left: calc(10px + 10vw);
       overflow: hidden;
       -webkit-background-clip: text;
       background-clip: text;
-      -webkit-text-stroke: 0.1em transparent;
+      -webkit-text-stroke: 0.05em transparent;
       span {
-        font-family: "Source Code Pro ExtraLight", Tahoma, Geneva, Verdana,
-          sans-serif;
+        font-family: "Heebo", Tahoma, Geneva, Verdana, sans-serif;
       }
     }
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  line {
+    stroke-width: 5;
+    transition: all 0.75s ease;
+    stroke-linecap: round;
+    fill-rule: evenodd;
+    opacity: 0.9,
   }
 }

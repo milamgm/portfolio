@@ -1,0 +1,35 @@
+.nav_div {
+  width: 130px;
+  background-color: mix(#010010, white, 97%);
+  position: sticky;
+
+  @media screen and (max-width: 1300px) {
+    padding-top: 60px;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    display: none;
+  }
+  .close {
+    width: fit-content;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 1.6rem;
+    cursor: pointer;
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
+    @media screen and (min-width: 1300px) {
+        display: none;
+      }
+  }
+}
+.content {
+  width: calc(100vw - 130px);
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  @media screen and (max-width: 1300px) {
+    width: 100vw;
+  }
+}

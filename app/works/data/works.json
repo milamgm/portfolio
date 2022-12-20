@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Find a Trainer",
+      "img": "https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img2": "https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+      "img3": "https://images.pexels.com/photos/6342323/pexels-photo-6342323.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "desc": "Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.",
+      "technologies": ["react", "sass", "firebase"]
+    },
+    {
+      "id": 2,
+      "title": "Ramen Restaurant",
+      "img": "https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img2": "https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+      "img3": "https://images.pexels.com/photos/6342323/pexels-photo-6342323.jpeg?auto=compress&cs=tinysrgb&w=1600",
+       "desc": "App for restaurants that consists of a tablet ordering system, a kitchen display system as well as inventory and order management and data analysis.",
+      "technologies": ["react", "typescript", "bootstrap", "firebase", "pwa"]
+    },
+    {
+      "id": 3,
+      "title": "Eleven Shop",
+      "img": "https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img2": "https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+      "img3": "https://images.pexels.com/photos/6342323/pexels-photo-6342323.jpeg?auto=compress&cs=tinysrgb&w=1600",
+      "desc": "Minimalist Ecommerce with a secure payment gateway managed by Stripe.",
+      "technologies": ["react", "sass", "redux", "strapi", "stripe"]
+    },
+    {
+      "id": 4,
+      "title": "This Portfolio",
+      "img": "https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+      "img2": "https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
+      "img3": "https://images.pexels.com/photos/6342323/pexels-photo-6342323.jpeg?auto=compress&cs=tinysrgb&w=1600",
+       "desc": "A colorful portfolio developed in Nextjs 13 following current design trends including animations made with GSAP and Barbajs.",
+      "technologies": ["react", "next", "typescript", "gsap", "sass", "barba"]
+    }
+  ]

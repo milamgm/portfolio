@@ -2,28 +2,44 @@
 import NavBar from "../components/NavBar";
 import "../styles/globals.scss";
 import "../styles/button.scss";
-import { gsap, ScrollTrigger, TextPlugin } from "gsap/all";
-gsap.registerPlugin(TextPlugin);
-gsap.registerPlugin(ScrollTrigger);
-import "./layout.scss"
-import {GrClose} from "react-icons/Gr";
-import {useState} from "react"
+import "./layout.scss";
+import { GrClose } from "react-icons/Gr";
+import { GiHamburgerMenu } from "react-icons/Gi";
+import { useState, useEffect } from "react";
+import Intro from "../components/Intro";
 
 export default function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
- 
+  const [openMenu, setOpenMenu] = useState(false);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setLoaded(true), 800);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <html>
       <head />
       <body>
-        <div className="nav_div">
-        <div className="close"><GrClose/></div>
-          <NavBar />
-        </div>
-        <div className="content">{children}</div>
+       {!loaded &&  <Intro/>}
+        {loaded && (
+          <>
+            <div
+              className="mobile_menu_icon"
+              onClick={() => setOpenMenu((prev) => !prev)}
+            >
+              {!openMenu ? <GiHamburgerMenu /> : <GrClose />}
+            </div>
+            <div className={`nav_div ${openMenu === true ? "active" : ""}`}>
+              <NavBar setOpenMenu={setOpenMenu} />
+            </div>
+            <main className="content">{children}</main>
+          </>
+        )}
       </body>
     </html>
   );

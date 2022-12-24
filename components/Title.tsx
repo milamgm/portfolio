@@ -1,21 +1,16 @@
 import React, { useEffect, useRef } from "react";
 import { typingTextEffectSingle } from "../gsapEffects/TypingText";
 
-const Title = ({ title }) => {
-  const boxRef = useRef();
-  const textRef = useRef();
+type TitleProps = {
+  title: string;
+};
+const Title: React.FC<TitleProps> = ({ title }) => {
+  const boxRef = useRef<HTMLSpanElement>(null);
+  const textRef = useRef<HTMLSpanElement>(null);
 
   // Adding Single Text Typing Effect
   useEffect(() => {
-    typingTextEffectSingle(boxRef.current, textRef.current, title);
-
-    return () => {
-      typingTextEffectSingle(
-        boxRef.current,
-        textRef.current,
-        `WOR<span>K</span>S`
-      );
-    };
+    typingTextEffectSingle(textRef.current, boxRef.current, title);
   }, []);
   return (
     <h2 className="title">

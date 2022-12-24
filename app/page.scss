@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   min-height: 100vh;
-
+  text-transform: uppercase;
   height: 100vh;
   .center {
     h1 {
@@ -17,7 +17,6 @@
         #9600ff 60%
       );
       position: relative;
-      font-family: Lato, sans-serif;
       font-size: calc(40px + 3vw);
       font-weight: bold;
       padding-left: calc(10px + 10vw);
@@ -26,7 +25,7 @@
       background-clip: text;
       -webkit-text-stroke: 0.05em transparent;
       span {
-        font-family: "Heebo", Tahoma, Geneva, Verdana, sans-serif;
+        font-family: "Monument", Tahoma, Geneva, Verdana, sans-serif;
       }
     }
   }

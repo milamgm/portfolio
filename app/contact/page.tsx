@@ -6,13 +6,13 @@ import "./contact.scss";
 
 const initialState = "milagm89@outlook.de";
 
+// Copy email to clipboard
+const handleCopyToClipboard = () => {
+  navigator.clipboard.writeText(initialState);
+};
+
 const page = () => {
   const [multiStringLink, setMultiStringLink] = useState(initialState);
-
-  // Copy email to clipboard
-  const handleCopyToClipboard = () => {
-    navigator.clipboard.writeText(initialState);
-  };
 
   return (
     <div className="contact">
@@ -23,7 +23,8 @@ const page = () => {
           <hr />
           <p>
             Got a question, proposal or project or want to work together on
-            something? <br/>Feel free to reach out.
+            something? <br />
+            Feel free to reach out.
           </p>
           <a href="mailto: milagm89@outlook.de">
             <button className="btn btn-2">

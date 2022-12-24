@@ -23,11 +23,13 @@
         #25bfff 40%,
         #4b7fff 50%
       );
-      transform: rotate(10deg);
+      transform: rotate(5deg);
       margin-left: 50px;
+      margin-bottom: 100px;
       .tvframe {
         position: relative;
         max-width: 400px;
+     
         .tv {
           position: absolute;
           width: 100%;
@@ -66,7 +68,7 @@
     }
   }
   p {
-    width: 50vw;
+    width: 60vw;
     font-size: 1.2rem;
   }
   .technologies {

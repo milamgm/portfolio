@@ -1,7 +1,10 @@
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
+import { FadeInProps } from "../types/types";
 
-export const FadeIn = ({ children, duration = 1, delay = 0 }) => {
+export const FadeIn: React.FC<FadeInProps> = ({
+  children
+}) => {
   const element = useRef(null);
 
   useEffect(() => {
@@ -10,8 +13,7 @@ export const FadeIn = ({ children, duration = 1, delay = 0 }) => {
       ease: "power2.inOut",
     });
     gsap.to(element.current, {
-   
-      duration: duration,
+      duration: 1,
       opacity: 1,
       ease: "power2.inOut",
     });

@@ -1,31 +1,15 @@
 "use client";
 import { useEffect, useRef } from "react";
 import "./about.scss";
-import gsap from "gsap";
 import listStyle from "../../public/list_style.svg";
 import Title from "../../components/Title";
 import { FadeIn } from "../../gsapEffects/SingleEffects";
 
 const about = () => {
-  const tvBgRef = useRef();
-  const tvRef = useRef();
 
-  useEffect(() => {
-    const mouseMove = document.addEventListener("mousemove", (e) => {
-      gsap.to(tvBgRef.current, {
-        rotate: e.clientX * 0.002,
-        stagger: -0.02,
-      });
-      gsap.to(tvRef.current, {
-        rotate: e.clientY * 0.007,
-        stagger: -0.02,
-      });
-    });
-    return () => {
-      mouseMove;
-    };
-  }, []);
-
+  const tvBgRef = useRef<HTMLDivElement>(null);
+  const tvRef = useRef<HTMLDivElement>(null);
+ 
   return (
     <div className="about">
       <Title title="Abo<span>u</span>t" />

@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #010010;
+    background-color: mix(#00000a, rgb(0, 255, 213), 98%);
     height: 200px;
     h1 {
       margin: 10px;
@@ -45,8 +45,8 @@
     display: flex;
     flex-direction: column;
     .link {
-      border-top: 0.5px solid  mix(#010010, white, 87%);
-      border-bottom: 0.5px solid  mix(#010010, white, 87%);
+      border-top: 0.5px solid   #145050;
+      border-bottom: 0.5px solid #032b2b;
       height: 53px;
       font-size: 1.05rem;
       color:  mix(#010010, white, 37%);
@@ -55,7 +55,7 @@
       justify-content: center;
       &:hover {
         background: rgb(63, 94, 251);
-        background: radial-gradient(circle, #00ffff 10%, #4b7fff 80%);
+        background: radial-gradient(circle, #00ffff 10%, #4b7fff 90%);
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;

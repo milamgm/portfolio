@@ -33,6 +33,6 @@
       "img2": "https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
       "img3": "https://images.pexels.com/photos/6342323/pexels-photo-6342323.jpeg?auto=compress&cs=tinysrgb&w=1600",
        "desc": "A colorful portfolio developed in Nextjs 13 following current design trends including animations made with GSAP and Barbajs.",
-      "technologies": ["react", "next", "typescript", "gsap", "sass", "barba"]
+      "technologies": ["react", "next", "typescript", "gsap", "sass"]
     }
   ]

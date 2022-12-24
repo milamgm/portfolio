@@ -2,23 +2,17 @@
 import "./page.scss";
 import { useEffect, useRef } from "react";
 import { typingTextEffectSingle } from "../gsapEffects/TypingText";
-import { FadeIn } from "../gsapEffects/SingleEffects";
 
-
-const greeting = `Hi! <br> I'm Mila, <br> web developer.`
+const greeting = `Hi! <br> I'm Mila, <br> web developer.`;
 const HomePage = () => {
-  const boxRef = useRef();
-  const textRef = useRef();
+  const boxRef = useRef<HTMLSpanElement>(null);
+  const textRef = useRef<HTMLSpanElement>(null);
 
   // Adding Single Text Typing Effect
   useEffect(() => {
     let box = boxRef.current;
     let text = textRef.current;
-    typingTextEffectSingle(box, text, greeting);
-
-    return () => {
-      typingTextEffectSingle(box, text, greeting);
-    };
+    typingTextEffectSingle(text, box, greeting);
   }, []);
 
   return (

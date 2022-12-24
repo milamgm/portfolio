@@ -12,7 +12,7 @@ shadeemerhi,
 graup,
 and H01001000 reacte html,
 body {
-  background-color: mix(#010010, white, 94%);
+background-color:  #00000a;
   display: flex;
   font-family: "Heebo", Tahoma, Geneva, Verdana, sans-serif;
   position: fixed;
@@ -42,9 +42,9 @@ a {
   }
 
   *::-webkit-scrollbar-thumb {
-    background-color:  mix(#010010, white, 57%);
+    background-color:  #00ffff;
     border-radius: 10px;
-    border: 3px solid mix(#010010, white, 94%);
+    border: 3px solid #00000a;
   }
 
 
@@ -67,6 +67,7 @@ a {
     }
   }
 }
+
 h1 {
   font-size: 3rem;
 }
@@ -76,26 +77,10 @@ h1 {
 }
 
 @font-face {
-  font-family: "Source Code Pro ExtraLight";
-  src: url("../public/source.ttf");
-}
-@font-face {
-  font-family: "StretchPro";
-  src: url("../public/StretchPro.otf");
-}
-@font-face {
-  font-family: "Retro Gaming";
-  src: url("../public/Retro.ttf");
-}
-@font-face {
-  font-family: "Mustard";
-  src: url("../public/Mustard.ttf");
-}
-@font-face {
-  font-family: "Nanum Gothic";
-  src: url("../public/NanumGothic.ttf");
-}
-@font-face {
   font-family: "Heebo";
   src: url("../public/Heebo.ttf");
+}
+@font-face {
+  font-family: "Monument";
+  src: url("../public/Monument.otf");
 }

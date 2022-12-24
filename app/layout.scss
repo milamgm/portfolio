@@ -1,7 +1,9 @@
 .nav_div {
   width: 130px;
-  background-color: mix(#010010, white, 97%);
+  height: 100vh;
+  background-color: mix(#00000a,rgb(0, 18, 30), 60%);
   position: sticky;
+  box-shadow: rgba(0, 0, 0, 0.80) 0px 5px 15px;
 
   @media screen and (max-width: 1300px) {
     padding-top: 60px;
@@ -10,26 +12,34 @@
     z-index: 99;
     display: none;
   }
-  .close {
-    width: fit-content;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 1.6rem;
-    cursor: pointer;
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-    @media screen and (min-width: 1300px) {
-        display: none;
-      }
+}
+.active {
+  @media screen and (max-width: 1300px) {
+    display: block;
   }
 }
 .content {
+
   width: calc(100vw - 130px);
   overflow-y: scroll;
+  overflow-x: hidden;
   scroll-behavior: smooth;
-
+height: 100vh;
   @media screen and (max-width: 1300px) {
     width: 100vw;
+  }
+}
+.mobile_menu_icon {
+  width: fit-content;
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  font-size: 2.5rem;
+  z-index: 999;
+  cursor: pointer;
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  @media screen and (min-width: 1300px) {
+    display: none;
   }
 }

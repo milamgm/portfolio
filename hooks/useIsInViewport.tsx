@@ -1,23 +1,19 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState, RefObject } from "react";
 
-export const useIsInViewport = (ref) => {
+export const useIsInViewport = (ref: RefObject<HTMLElement>) => {
   const [isIntersecting, setIsIntersecting] = useState(false);
 
-  const observer = useMemo(
-    () =>
-      new IntersectionObserver(([entry]) =>
-        setIsIntersecting(entry.isIntersecting)
-      ),
-    []
-  );
 
   useEffect(() => {
-    observer.observe(ref.current);
+    const observer = new IntersectionObserver(([entry]) =>
+      setIsIntersecting(entry.isIntersecting)
+    );
+    observer.observe(ref.current!);
 
     return () => {
       observer.disconnect();
     };
-  }, [ref, observer]);
+  }, [ref]);
 
   return isIntersecting;
 };

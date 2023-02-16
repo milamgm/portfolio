@@ -3,8 +3,8 @@ import NavBar from "../components/NavBar";
 import "../styles/globals.scss";
 import "../styles/button.scss";
 import "./layout.scss";
-import { GrClose } from "react-icons/Gr";
-import { GiHamburgerMenu } from "react-icons/Gi";
+import { GrClose } from "react-icons/gr";
+import { GiHamburgerMenu } from "react-icons/gi";
 import { useState, useEffect } from "react";
 import Intro from "../components/Intro";
 

@@ -21,7 +21,7 @@ const NavBar = ({ setOpenMenu }) => {
           Works
         </Link>
         <Link className="link" href="/about" onClick={() => setOpenMenu(false)}>
-          About Me
+          About
         </Link>
         <Link
           className="link"

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import "./about.scss";
 import listStyle from "../../public/list_style.svg";
 import Title from "../../components/Title";

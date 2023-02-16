@@ -2,8 +2,11 @@
 import Link from "next/link";
 import React from "react";
 import "./navbar.scss";
+interface INavBarProps {
+  setOpenMenu: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
-const NavBar = ({ setOpenMenu }) => {
+const NavBar = ({ setOpenMenu }: INavBarProps) => {
   return (
     <div className="navbar">
       <div className="logo">
@@ -21,7 +24,7 @@ const NavBar = ({ setOpenMenu }) => {
           Works
         </Link>
         <Link className="link" href="/about" onClick={() => setOpenMenu(false)}>
-          About Me
+          About
         </Link>
         <Link
           className="link"

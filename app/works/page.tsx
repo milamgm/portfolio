@@ -11,8 +11,8 @@ import works from "./data/works.json";
 import Title from "../../components/Title";
 import { FadeIn } from "../../gsapEffects/SingleEffects";
 import { useIsInViewport } from "../../hooks/useIsInViewport";
-import { MdKeyboardArrowUp } from "react-icons/Md";
-import { WorkImgProps, WorkInfoProps } from "../../types/types";
+import { MdKeyboardArrowUp } from "react-icons/md";
+import { WorkImgProps } from "../../types/types";
 
 const Work = () => {
   //Creating two refs, each one with multiple elements.

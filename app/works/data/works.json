@@ -1,38 +1,34 @@
 [
     {
       "id": 1,
-      "title": "Find a Trainer",
-      "img": "https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "img2": "https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
-      "img3": "https://images.pexels.com/photos/6342323/pexels-photo-6342323.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "desc": "Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.Tutoring website that connects students with tutors and trainers for private sport lessons.",
-      "technologies": ["react", "sass", "firebase"]
+      "title": "Fitflix",
+      "subtitle": "Trainers Marketplace",
+      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-fc0fd.appspot.com/o/fitflix1.JPG?alt=media&token=4a4c9b1e-7a95-459b-8ba5-6416ddcd0eec",
+      "img2": "https://firebasestorage.googleapis.com/v0/b/portfolio-fc0fd.appspot.com/o/fitflix2.JPG?alt=media&token=d789ef10-0dcc-4b30-8488-e85c7fb575b7", 
+      "img3": "https://firebasestorage.googleapis.com/v0/b/portfolio-fc0fd.appspot.com/o/fitflix3.JPG?alt=media&token=260ed554-bac4-422a-954e-e7ba4b7d637c",
+      "desc": "This online tutoring platform serves as a bridge between students seeking academic assistance and tutors who provide personalized lessons. Additionally, the platform connects students with trainers for private sports lessons, allowing them to improve their skills and achieve their athletic goals.",
+      "technologies": ["react", "sass", "firebase"],
+      "webLink": "https://milamgm.github.io/fitflix-trainers-marketplace/"
     },
     {
       "id": 2,
-      "title": "Ramen Restaurant",
-      "img": "https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "img2": "https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
-      "img3": "https://images.pexels.com/photos/6342323/pexels-photo-6342323.jpeg?auto=compress&cs=tinysrgb&w=1600",
-       "desc": "App for restaurants that consists of a tablet ordering system, a kitchen display system as well as inventory and order management and data analysis.",
-      "technologies": ["react", "typescript", "bootstrap", "firebase", "pwa"]
+      "title": "Harajuku",
+      "subtitle": "Restaurant System",
+      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-fc0fd.appspot.com/o/harajuku1.JPG?alt=media&token=d3896d32-cfbf-4a36-85e4-0a33d6d2d6fa",
+      "img2": "https://firebasestorage.googleapis.com/v0/b/portfolio-fc0fd.appspot.com/o/harajuku2.JPG?alt=media&token=fe857521-d995-4c5b-9df0-e57c42e576e2", 
+      "img3": "https://firebasestorage.googleapis.com/v0/b/portfolio-fc0fd.appspot.com/o/harajuku3.JPG?alt=media&token=840193bd-03a6-41d7-bcc9-d71a8bf2b980",
+       "desc": "This comprehensive restaurant management system includes three specialized applications. The Shop app is designed to be used on tablets that are distributed throughout the restaurant, allowing customers to place orders with ease. The Kitchen app automatically processes the orders received from customers, while the Administrator app provides statistical summaries and streamlines product management.",
+      "technologies": ["react", "typescript", "bootstrap", "firebase", "pwa"],
+      "weblink": "https://harajuku-restaurant-management-system.vercel.app/"
     },
     {
       "id": 3,
-      "title": "Eleven Shop",
-      "img": "https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "img2": "https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
-      "img3": "https://images.pexels.com/photos/6342323/pexels-photo-6342323.jpeg?auto=compress&cs=tinysrgb&w=1600",
-      "desc": "Minimalist Ecommerce with a secure payment gateway managed by Stripe.",
+      "title": "Eleven",
+      "subtitle": "Clothing eShop",
+      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-fc0fd.appspot.com/o/eleven1.JPG?alt=media&token=88303246-e13c-4ad9-8c79-fd6468f938a2",
+      "img2": "https://firebasestorage.googleapis.com/v0/b/portfolio-fc0fd.appspot.com/o/eleven2.JPG?alt=media&token=653ce164-6489-4d51-b53c-4f20e9d7d288", 
+      "img3": "https://firebasestorage.googleapis.com/v0/b/portfolio-fc0fd.appspot.com/o/eleven3.JPG?alt=media&token=d4c09ab7-be13-492c-9a68-7b2cfd3d8d5b",
+      "desc": "The minimalist Ecommerce project I developed had a clean and modern design that was optimized for simplicity and usability. The site featured a product catalog, shopping cart, and checkout process that allowed users to make purchases using a secure payment gateway managed by Stripe.",
       "technologies": ["react", "sass", "redux", "strapi", "stripe"]
-    },
-    {
-      "id": 4,
-      "title": "This Portfolio",
-      "img": "https://images.pexels.com/photos/942317/pexels-photo-942317.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-      "img2": "https://images.pexels.com/photos/96620/pexels-photo-96620.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", 
-      "img3": "https://images.pexels.com/photos/6342323/pexels-photo-6342323.jpeg?auto=compress&cs=tinysrgb&w=1600",
-       "desc": "A colorful portfolio developed in Nextjs 13 following current design trends including animations made with GSAP and Barbajs.",
-      "technologies": ["react", "next", "typescript", "gsap", "sass"]
     }
   ]

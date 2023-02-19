@@ -31,14 +31,14 @@ const Work = () => {
       ref.current!.push(el);
     }
   };
-  console.log(revealRefs);
+
   return (
     <div className="works" style={{ height: ` 100vh` }}>
       <div className="main" ref={mainDivRef} id="main">
         <Title title={`WOR<span>K</span>S`} />
         <FadeIn>
           <nav className="menu">
-            {works.map(({ id, title, img }, ind) => (
+            {works.map(({ id, title, subtitle, img }, ind) => (
               <div
                 key={id}
                 className="item"
@@ -61,7 +61,10 @@ const Work = () => {
                 </div>
                 <span className="text">
                   <span className="innertext">
-                    <a href={`#${title}`}>{title}</a>
+                    <a href={`#${title}`}>
+                      <h4>{title}</h4>
+                      <div className="subtitle">{subtitle}</div>
+                    </a>
                   </span>
                 </span>
               </div>
@@ -69,25 +72,45 @@ const Work = () => {
           </nav>
         </FadeIn>
       </div>
-      {works.map(({ id, title, img, img2, img3, desc, technologies }) => (
-        <section key={id} id={title}>
-          <div className="center">
-            <div className="side">
-            <div className="info">
-      <h2>{title}</h2>
-      <p>{desc}</p>
-      <div className="technologies">
-        {technologies.map((technologie) => (
-          <img key={technologie} src={`${technologie}.png`} alt={technologie} />
-        ))}
-      </div>
-    </div>
-
-              <WorkImg img={img} img2={img2} img3={img3} title={title} />
+      {works.map(
+        ({
+          id,
+          title,
+          subtitle,
+          img,
+          img2,
+          img3,
+          desc,
+          technologies,
+          webLink,
+        }) => (
+          <section key={id} id={title}>
+            <div className="center">
+              <div className="side">
+                <div className="info">
+                  <a href={webLink}>
+                    <div className="title">
+                      <h2>{title}</h2>
+                      <h3>{subtitle}</h3>
+                    </div>
+                    <p>{desc}</p>
+                    <div className="technologies">
+                      {technologies.map((technologie) => (
+                        <img
+                          key={technologie}
+                          src={`${technologie}.png`}
+                          alt={technologie}
+                        />
+                      ))}
+                    </div>
+                  </a>
+                </div>
+                <WorkImg img={img} img2={img2} img3={img3} title={title} />
+              </div>
             </div>
-          </div>
-        </section>
-      ))}
+          </section>
+        )
+      )}
       <a href="#main" style={{ opacity: `${isInViewport ? "0" : "1"}` }}>
         <div className="arrow">
           <MdKeyboardArrowUp />
@@ -99,7 +122,6 @@ const Work = () => {
 
 export default Work;
 
-
 const WorkImg: React.FC<WorkImgProps> = ({ img, img2, img3, title }) => {
   const imgs = [img, img2, img3];
   const [random, setRandom] = useState(0);
@@ -109,8 +131,8 @@ const WorkImg: React.FC<WorkImgProps> = ({ img, img2, img3, title }) => {
   useEffect(() => {
     let random = 0;
     const interval = setInterval(() => {
-      random = Math.floor(Math.random() * imgs.length);
-      setRandom(random);
+      random <= 1 ? random ++  : random = 0;
+      setRandom(random)
     }, 2000);
 
     return () => clearInterval(interval);

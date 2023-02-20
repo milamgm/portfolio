@@ -19,7 +19,7 @@
       "img3": "https://firebasestorage.googleapis.com/v0/b/portfolio-fc0fd.appspot.com/o/harajuku3.JPG?alt=media&token=840193bd-03a6-41d7-bcc9-d71a8bf2b980",
        "desc": "This comprehensive restaurant management system includes three specialized applications. The Shop app is designed to be used on tablets that are distributed throughout the restaurant, allowing customers to place orders with ease. The Kitchen app automatically processes the orders received from customers, while the Administrator app provides statistical summaries and streamlines product management.",
       "technologies": ["react", "typescript", "bootstrap", "firebase", "pwa"],
-      "weblink": "https://harajuku-restaurant-management-system.vercel.app/"
+      "webLink": "https://harajuku-restaurant-management-system.vercel.app/"
     },
     {
       "id": 3,

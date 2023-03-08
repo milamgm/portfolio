@@ -3,7 +3,7 @@ import "./page.scss";
 import { useEffect, useRef } from "react";
 import { typingTextEffectSingle } from "../gsapEffects/TypingText";
 
-const greeting = `Hi! <br> I'm Mila, <br> web developer.`;
+const greeting = `Hi! <br> I'm Mila, <br> web dev.`;
 const HomePage = () => {
   const boxRef = useRef<HTMLSpanElement>(null);
   const textRef = useRef<HTMLSpanElement>(null);

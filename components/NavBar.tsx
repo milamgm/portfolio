@@ -36,18 +36,13 @@ const NavBar = ({ setOpenMenu }: INavBarProps) => {
       </nav>
       <ul className="social">
         <li>
-          <a href="">
+          <a href="https://www.linkedin.com/in/milagros-c-gonzalez-montero-b4a7b0266/">
             <img src="./linkedin.svg" alt="" />
           </a>
         </li>
         <li>
           <a href="https://github.com/milamgm">
             <img src="./github.svg" alt="Github" />
-          </a>
-        </li>
-        <li>
-          <a href="">
-            <img src="./twitter.svg" alt="" />
           </a>
         </li>
       </ul>
